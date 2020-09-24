@@ -1,0 +1,17 @@
+{
+  "name": "course-advancement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "form-data": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "sort-array": "^4.1.2"
+  }
+}
