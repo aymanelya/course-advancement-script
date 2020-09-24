@@ -5,8 +5,8 @@ const getSections = require("./sections");
 const getVideos = require("./videos");
 
 const sendToTrello = async (path) => {
-  // const boardID = await newBoard(path);
-  const boardLists = await getBoardLists("5f6cbed01975de2eff37f3c6");
+  const boardID = await newBoard(path);
+  const boardLists = await getBoardLists(boardID);
   const cardTodoHeader = await newCard(boardLists.todo, "To Do");
   const cardTodoHeaderAtt = await addAttachment(cardTodoHeader, "To-Do.png");
   const cardDoingHeader = await newCard(boardLists.doing, "Doing");
